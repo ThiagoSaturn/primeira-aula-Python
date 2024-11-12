@@ -20,3 +20,10 @@ for 'x' in range (1,10): = fazer um loop de repetição
 if    :
   print
 else 
+----------------------------------------
+#Classe
+pssoa = {
+'Nome':'Chrales',
+'Idade":'32 anos',
+'Cidade':'São Mateus'
+}
