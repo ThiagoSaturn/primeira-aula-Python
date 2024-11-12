@@ -11,3 +11,12 @@ list(armazena uma lista , Ex:alface, tomate, sacola)
 
 print(type(variavel)) (para descobrir o tipo da entrada de dados)
 //funções 
+---------------------------------------
+#Loop de Repetiçao 
+for 'x' in range (1,10): = fazer um loop de repetição
+  print(x)
+----------------------------------------
+#Condicional 
+if    :
+  print
+else 
