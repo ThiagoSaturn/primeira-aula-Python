@@ -9,6 +9,7 @@ def main (page:ft.Page):
     page.window.resizable = False
     page.padding = 0
     page.window_title_bar_hidden = True
+    page.bgcolor = "#c0c0c0"
    
     r1 =  ft.Container (width=200, height=650, bgcolor='#000000', padding = 20,
                         content= ft.Column([
@@ -65,13 +66,37 @@ def main (page:ft.Page):
 
     alunos = ft.Container(width=965, height=620,  padding = 20,
                        
-                        content= ft.DataTable(columns=[
-                            ft.DataColumn(ft.Text("Nome",color='#000000')),
-                            ft.DataColumn(ft.Text("Matrícula",color='#000000')),
-                            ft.DataColumn(ft.Text("Turma",color='#000000')),
-                            ft.DataColumn(ft.Text("Ações",color='#000000')),    
-                        ]))
-                
+                        content= ft.DataTable(
+            columns=[
+                ft.DataColumn(ft.Text("First name")),
+                ft.DataColumn(ft.Text("Last name")),
+                ft.DataColumn(ft.Text("Age"), numeric=True),
+            ],
+            rows=[
+                ft.DataRow(
+                    cells=[
+                        ft.DataCell(ft.Text("John")),
+                        ft.DataCell(ft.Text("Smith")),
+                        ft.DataCell(ft.Text("43")),
+                    ],
+                ),
+                ft.DataRow(
+                    cells=[
+                        ft.DataCell(ft.Text("Jack")),
+                        ft.DataCell(ft.Text("Brown")),
+                        ft.DataCell(ft.Text("19")),
+                    ],
+                ),
+                ft.DataRow(
+                    cells=[
+                        ft.DataCell(ft.Text("Alice")),
+                        ft.DataCell(ft.Text("Wong")),
+                        ft.DataCell(ft.Text("25")),
+                    ],
+                ),
+            ],
+        )
+                    )
     
 
     responsaveis = ft.Container(width=965, height=620, bgcolor='#000000', padding = 20,
